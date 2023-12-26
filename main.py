@@ -178,7 +178,7 @@ def generate_response(prompt_text):
 st.title("MedGuru Advisor Chatbot")
 
 # Toggle sidebar button
-toggle_sidebar = st.button("Toggle Sidebar", key="sidebar_button", on_click=None, args=None, kwargs=None, help=None)
+toggle_sidebar = st.button("MedGuru Advisor Chatbot", key="sidebar_button", on_click=None, args=None, kwargs=None, help=None)
 
 # Sidebar content
 if toggle_sidebar:
