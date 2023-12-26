@@ -57,12 +57,12 @@ sidebar_image_url = "https://img.freepik.com/premium-photo/colorful-space-galaxy
 sidebar_bg(sidebar_image_url)
 
 # Set OpenAI API key
-#api_key = st.text_input("Enter your API key:")
-api_key = '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'
+api_key = st.text_input("Enter your API key:")
+# api_key = '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'
 st.title("MedGuru Advisor")
 
 # Display the entered API key
-#st.write("You entered API key:", api_key)
+st.write("You entered API key:", api_key)
 openai.api_key = api_key
 
 
