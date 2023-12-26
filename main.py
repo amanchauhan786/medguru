@@ -151,20 +151,48 @@ def generate_response(prompt_text):
     )
 
     return response.choices[0].text.strip()
-with st.sidebar:
-    st.title("MedGuru Advisor Chatbot")
-    st_lottie(lottie_coding, height=200, width=300)
-    prompt = st.text_input("for more suggestions Enter your opinion")
-    st.write("HI 👋  I am MedGuru bot")
-    generated_text = generate_response(prompt + " "+"medical advice")
-    if prompt:
-        st.write("MedGuru Response 🤖😁:")
-        st.write(generated_text)
+# with st.sidebar:
+#     st.title("MedGuru Advisor Chatbot")
+#     st_lottie(lottie_coding, height=200, width=300)
+#     prompt = st.text_input("for more suggestions Enter your opinion")
+#     st.write("HI 👋  I am MedGuru bot")
+#     generated_text = generate_response(prompt + " "+"medical advice")
+#     if prompt:
+#         st.write("MedGuru Response 🤖😁:")
+#         st.write(generated_text)
 
 
 # Display the local video with autoplay
 video_path = r"asd.mp4"
 st.video(video_path, start_time=0)
+
+#chatbot
+def generate_response(prompt_text):
+    response = openai.Completion.create(
+        engine="text-davinci-003",  # You can choose a different engine if needed
+        prompt=prompt_text,
+        max_tokens=900  # Adjust the number of tokens for a longer response
+    )
+    return response.choices[0].text.strip()
+# Main content
+st.title("MedGuru Advisor Chatbot")
+
+# Toggle sidebar button
+toggle_sidebar = st.button("Toggle Sidebar", key="sidebar_button", on_click=None, args=None, kwargs=None, help=None)
+
+# Sidebar content
+if toggle_sidebar:
+    with st.sidebar:
+        st.title("MedGuru Advisor Chatbot")
+        st_lottie(lottie_coding, height=200, width=300)
+        prompt = st.text_input("For more suggestions, enter your opinion")
+        st.write("HI 👋  I am MedGuru bot")
+        generated_text = generate_response(prompt + " " + "medical advice")
+        if prompt:
+            st.write("MedGuru Response 🤖😁:")
+            st.write(generated_text)
+
+
 #Developers
 
 # Function to display developer information
@@ -215,3 +243,56 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+st.header(":mailbox: Comments")
+
+# Feedback form HTML
+contact_form = """
+<div class="feedback-form">
+    <form action="https://formsubmit.co/amanchauhan20052005@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Your message here"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</div>
+"""
+
+# CSS styles
+css_styles = """
+<style>
+    /* Style inputs with type="text", type="email", and textareas */
+    .feedback-form input[type=text], 
+    .feedback-form input[type=email], 
+    .feedback-form textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    /* Style the submit button with a specific background color etc */
+    .feedback-form button[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    .feedback-form button[type=submit]:hover {
+        background-color: #45a049;
+    }
+</style>
+"""
+
+# Display the HTML and CSS
+st.markdown(contact_form + css_styles, unsafe_allow_html=True)
