@@ -108,7 +108,7 @@ else:
     reader = easyocr.Reader(['en'], gpu=False)
 
     # Access the webcam
-    cap = cv2.VideoCapture(0)  # Change the value to use a different camera if needed
+    cap = cv2.VideoCapture(1)  # Change the value to use a different camera if needed
     capture_button = st.button("Capture Image")
     if capture_button:
         ret, frame = cap.read()
