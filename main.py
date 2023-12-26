@@ -166,14 +166,14 @@ with st.sidebar:
 video_path = r"asd.mp4"
 st.video(video_path, start_time=0)
 
-#chatbot
-def generate_response(prompt_text):
-    response = openai.Completion.create(
-        engine="text-davinci-003",  # You can choose a different engine if needed
-        prompt=prompt_text,
-        max_tokens=900  # Adjust the number of tokens for a longer response
-    )
-    return response.choices[0].text.strip()
+# #chatbot
+# def generate_response(prompt_text):
+#     response = openai.Completion.create(
+#         engine="text-davinci-003",  # You can choose a different engine if needed
+#         prompt=prompt_text,
+#         max_tokens=900  # Adjust the number of tokens for a longer response
+#     )
+#     return response.choices[0].text.strip()
 
 # # Toggle sidebar button
 # toggle_sidebar = st.button("MedGuru Advisor Chatbot", key="sidebar_button", on_click=None, args=None, kwargs=None, help=None)
