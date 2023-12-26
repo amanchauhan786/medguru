@@ -57,7 +57,7 @@ sidebar_image_url = "https://img.freepik.com/premium-photo/colorful-space-galaxy
 sidebar_bg(sidebar_image_url)
 
 # Set OpenAI API key
-api_key = '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'
+api_key = input('Enter your api key')
 openai.api_key = api_key
 
 
@@ -158,7 +158,7 @@ with st.sidebar:
 
 
 # Display the local video with autoplay
-video_path = r"D:\identify\asd.mp4"
+video_path = r"asd.mp4"
 st.video(video_path, start_time=0)
 #Developers
 
