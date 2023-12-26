@@ -12,7 +12,7 @@ def load_lottiefile(filepath: str):
     with open(filepath, "r") as f:
         return json.load(f)
 
-lottie_coding = load_lottiefile(r"amanchauhan786/medguru/main/aman2.json")
+lottie_coding = load_lottiefile(r"aman2.json")
 
 #background
 def set_bg_hack_url():
