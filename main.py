@@ -151,15 +151,15 @@ def generate_response(prompt_text):
     )
 
     return response.choices[0].text.strip()
-# with st.sidebar:
-#     st.title("MedGuru Advisor Chatbot")
-#     st_lottie(lottie_coding, height=200, width=300)
-#     prompt = st.text_input("for more suggestions Enter your opinion")
-#     st.write("HI 👋  I am MedGuru bot")
-#     generated_text = generate_response(prompt + " "+"medical advice")
-#     if prompt:
-#         st.write("MedGuru Response 🤖😁:")
-#         st.write(generated_text)
+with st.sidebar:
+    st.title("MedGuru Advisor Chatbot")
+    st_lottie(lottie_coding, height=200, width=300)
+    prompt = st.text_input("for more suggestions Enter your opinion")
+    st.write("HI 👋  I am MedGuru bot")
+    generated_text = generate_response(prompt + " "+"medical advice")
+    if prompt:
+        st.write("MedGuru Response 🤖😁:")
+        st.write(generated_text)
 
 
 # Display the local video with autoplay
@@ -174,23 +174,21 @@ def generate_response(prompt_text):
         max_tokens=900  # Adjust the number of tokens for a longer response
     )
     return response.choices[0].text.strip()
-# Main content
-st.title("MedGuru Advisor Chatbot")
 
-# Toggle sidebar button
-toggle_sidebar = st.button("MedGuru Advisor Chatbot", key="sidebar_button", on_click=None, args=None, kwargs=None, help=None)
+# # Toggle sidebar button
+# toggle_sidebar = st.button("MedGuru Advisor Chatbot", key="sidebar_button", on_click=None, args=None, kwargs=None, help=None)
 
-# Sidebar content
-if toggle_sidebar:
-    with st.sidebar:
-        st.title("MedGuru Advisor Chatbot")
-        st_lottie(lottie_coding, height=200, width=300)
-        prompt = st.text_input("For more suggestions, enter your opinion")
-        st.write("HI 👋  I am MedGuru bot")
-        generated_text = generate_response(prompt + " " + "medical advice")
-        if prompt:
-            st.write("MedGuru Response 🤖😁:")
-            st.write(generated_text)
+# # Sidebar content
+# if toggle_sidebar:
+#     with st.sidebar:
+#         st.title("MedGuru Advisor Chatbot")
+#         st_lottie(lottie_coding, height=200, width=300)
+#         prompt = st.text_input("For more suggestions, enter your opinion")
+#         st.write("HI 👋  I am MedGuru bot")
+#         generated_text = generate_response(prompt + " " + "medical advice")
+#         if prompt:
+#             st.write("MedGuru Response 🤖😁:")
+#             st.write(generated_text)
 
 
 #Developers
