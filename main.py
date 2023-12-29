@@ -58,7 +58,7 @@ sidebar_bg(sidebar_image_url)
 
 # Set OpenAI API key
 # api_key = st.text_input("Enter your API key:")
-api_key = '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'
+api_key = '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'
 st.title("MedGuru Advisor")
 
 # Display the entered API key
