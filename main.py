@@ -206,7 +206,7 @@ def show_developers():
             "name": "Aman Chauhan",
             "bio": "Experienced in frontend development with expertise in HTML, CSS, and JavaScript.",
             "linkedin": "https://www.linkedin.com/in/aman-chauhan-128552256",
-            "profile_photo": "https://media.licdn.com/dms/image/D5635AQHn9Inh4hXZ-g/profile-framedphoto-shrink_400_400/0/1693222064565?e=1703952000&v=beta&t=3nPXFqzGhEEu1fkoSDDxsw25gDooCwxwj0aV3UZMjkA",  # Insert the URL for the profile photo
+            "profile_photo": "https://media.licdn.com/dms/image/D5635AQHn9Inh4hXZ-g/profile-framedphoto-shrink_400_400/0/1693222064565?e=1705075200&v=beta&t=Hq9Zr__dLWY0Xl8zqliAvu10GVufiWfIRaLrsSwhh_A",  # Insert the URL for the profile photo
         },
         {
             "name": "Vasu Johri",
