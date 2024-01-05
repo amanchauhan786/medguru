@@ -212,7 +212,7 @@ def show_developers():
             "name": "Vasu Johri",
             "bio": "Backend ninja skilled in Python, Flask, and databases.",
             "linkedin": "https://www.linkedin.com/in/vasu-johri-8b3b65245",
-            "profile_photo": "https://media.licdn.com/dms/image/D5635AQHjz-2QLv6Mvg/profile-framedphoto-shrink_400_400/0/1683698010075?e=1703952000&v=beta&t=QWeApd2NG8_cDBN9hTTvzwNK0ug3wVWe2NRECRSE2JE",  # Insert the URL for the profile photo
+            "profile_photo": "https://media.licdn.com/dms/image/D5635AQHjz-2QLv6Mvg/profile-framedphoto-shrink_400_400/0/1683698010075?e=1705078800&v=beta&t=7pYG-G8okUwzxRX9IO9SH9BZwkxbxAosZ1NUO3P9MRo",  # Insert the URL for the profile photo
         },
         # Add more developers as needed
     ]
