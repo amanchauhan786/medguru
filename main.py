@@ -95,7 +95,7 @@ if choice == 'Image Upload':
 
         # Generate response using OpenAI's GPT-3
         generated_text = openai.Completion.create(
-            engine="text-davinci-003",
+            engine="text-davinci-002",
             prompt=recognized_text,
             max_tokens=200
         )
