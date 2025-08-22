@@ -1,3 +1,4 @@
+![Uploading image.png…]()
 
 ````markdown
 # MedGuru - Medical Website Template  
