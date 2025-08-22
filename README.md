@@ -1,4 +1,4 @@
-![Uploading image.png…]()
+<img width="1817" height="658" alt="image" src="https://github.com/user-attachments/assets/da7e4fc1-a0f4-424f-af2e-1d7499fdbb97" />
 
 ````markdown
 # MedGuru - Medical Website Template  
